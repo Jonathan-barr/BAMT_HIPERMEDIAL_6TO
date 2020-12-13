@@ -110,7 +110,11 @@ h4 {
 /* Header */
 
 .site-header {
+<<<<<<< HEAD
     background-color: #71B100;
+=======
+    background-color: #979595;
+>>>>>>> 0f8aa1debb6d2826be70fe76ff87177157361e2a
     padding: 1rem 0 3rem 0;
 }
 
