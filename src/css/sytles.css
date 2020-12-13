@@ -212,6 +212,12 @@ h4 {
 .precio {
     color: #71B100;
     font-weight: 700;
+    
+}
+.precioAnuncios {
+    color: #71B100;
+    font-weight: 700;
+    text-align: center;
 }
 .iconos-caracteristicas {
     list-style: none;
@@ -423,8 +429,4 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 4498e6d3a36b02752ec408c9fb963353b7a35fc8
