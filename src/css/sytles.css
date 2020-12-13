@@ -401,7 +401,7 @@ textarea,
 select {
     padding: 1rem;
     display: block;
-    width: 100%;
+    width: 50%;
     background-color: #e1e1e1;
     margin-bottom: 2rem;
     border: none;
@@ -423,4 +423,8 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4498e6d3a36b02752ec408c9fb963353b7a35fc8
