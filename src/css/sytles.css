@@ -496,7 +496,7 @@ textarea,
 select {
     padding: 1rem;
     display: block;
-    width: 100%;
+    width: 50%;
     background-color: #e1e1e1;
     margin-bottom: 2rem;
     border: none;
