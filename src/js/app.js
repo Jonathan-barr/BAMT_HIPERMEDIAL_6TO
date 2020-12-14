@@ -23,3 +23,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function myFunction() {
+    var fecha_ingreso = moment(document.getElementById("fecha_ingreso").value);
+    // document.getElementById("demo").innerHTML = x;
+    var fecha_salida = moment(document.getElementById("fecha_salida").value);
+    // document.getElementById("demo").innerHTML = ;
+    var resp = fecha_salida.diff(fecha_ingreso, 'months')
+
+    var valorpordia = 600;
+    console.log(resp*valorpordia) 
+    
+}

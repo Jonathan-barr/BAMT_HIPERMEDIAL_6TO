@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/normalize.css" />
     <link rel="stylesheet" href="./src/css/sytles.css" />
     <link rel="stylesheet" href="./src/css/modal.css" />
+    <link rel="stylesheet" href="./src/css/anuncio.css" />
   </head>
 
   <body>
@@ -81,17 +82,45 @@
               </li>
             </ul>
 
-            <a class="boton boton-amarillo d-block" id="myBtn" >Reservación</a>
+            <a class="boton boton-amarillo d-block" id="myBtn">Reservación</a>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <div class="grid-container">
+                  <div class="anuncio">
+                  <img src="./assets/img/anuncio1.jpg" alt="Anuncio casa en el lago" />
+                  <div class="contenido-anuncio">
+                    <h3>Departamentos de Lujo en la ciudad</h3>
+                    <p>
+                      Sala exterior con chimenea y magnífica vista hacia quito, cumbayá,
+                      el ilaló y amueblada
+                    </p>
+                    <p>Servicios: wifi, tv cable, hidromasaje</p>
+                    <p class="precioAnuncios">$600</p>
+                  
+                  </div>
+                  </div>
+                  <!-- fin  -->
+                  <div class="anuncio">
+                    <h3> Reservar</h3>
+
+                      
+                      <input type="date" id="fecha_ingreso" placeholder="Fecha de ingreso">
+
+                      
+                      <input type="date" id="fecha_salida"placeholder="Fecha de salida">
+                      
+                      <button  class="boton boton-amarillo d-block" onclick="myFunction()">Try it</button>
+                      
+                      <div id="demo"></div>
+                  </div>
+                   <!-- fin  -->
+                </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -418,5 +447,6 @@
       </div>
     </footer>
     <script src="./src/js/app.js"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
   </body>
 </html>
