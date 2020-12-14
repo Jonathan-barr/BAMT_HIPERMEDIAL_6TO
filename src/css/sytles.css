@@ -115,7 +115,7 @@ h4 {
 }
 
 .site-header.inicio {
-    background-image: url(/assets/img/logo_empresa.png);
+    /* background-image: url(/assets/img/logo_empresa.png); */
     background-position: center center;
     background-size: cover;
     height: 100vh;
