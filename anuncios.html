@@ -1,337 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bienes Raices</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/normalize.css">
-    <link rel="stylesheet" href="./src/css/sytles.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/normalize.css" />
+    <link rel="stylesheet" href="./src/css/sytles.css" />
+    <link rel="stylesheet" href="./src/css/modal.css" />
+  </head>
 
-<body>
+  <body>
     <header class="site-header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="./assets/img/logo_empresa_nav.png" alt="Logotipo de Bienes Raices">
-                </a>
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="/">
+            <img
+              src="./assets/img/logo_empresa_nav.png"
+              alt="Logotipo de Bienes Raices"
+            />
+          </a>
 
-                <div class="mobile-menu">
-                    <a href="#navegacion">
-                        <img src="./assets/img/barras.svg" alt="Icono Menu">
-                    </a>
-                </div>
+          <div class="mobile-menu">
+            <a href="#navegacion">
+              <img src="./assets/img/barras.svg" alt="Icono Menu" />
+            </a>
+          </div>
 
-                <nav id="navegacion" class="navegacion">
-                    <a href="index.html">Inicio</a>
-                    <a href="somos.html">Quienes Somos</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="promo.html">Promociones</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacta.html">Contacto</a>
-
-                </nav>
-            </div>
-            <h1>Arriendo de Casas y Departamentos Exclusivos de Lujo</h1>
+          <nav id="navegacion" class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="somos.html">Quienes Somos</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="promo.html">Promociones</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacta.html">Contacto</a>
+          </nav>
         </div>
-        <!-- contenedor -->
+        <h1>Arriendo de Casas y Departamentos Exclusivos de Lujo</h1>
+      </div>
+      <!-- contenedor -->
     </header>
 
     <main class="contenedor seccion">
-        <h2 class="fw-300 centrar-texto">Casas y Depas en Arriendo</h2>
+      <h2 class="fw-300 centrar-texto">Casas y Depas en Arriendo</h2>
 
-        <div class="contenedor-anuncios">
-            <div class="anuncio">
-                <img src="./assets/img/anuncio1.jpg" alt="Anuncio casa en el lago">
-                <div class="contenido-anuncio">
-                    <h3>Departamentos de Lujo en la ciudad</h3>
-                    <p>Sala exterior con chimenea y magnífica vista hacia quito, cumbayá, el ilaló y amueblada</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$600</p>
+      <div class="contenedor-anuncios">
+        <div class="anuncio">
+          <img src="./assets/img/anuncio1.jpg" alt="Anuncio casa en el lago" />
+          <div class="contenido-anuncio">
+            <h3>Departamentos de Lujo en la ciudad</h3>
+            <p>
+              Sala exterior con chimenea y magnífica vista hacia quito, cumbayá,
+              el ilaló y amueblada
+            </p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$600</p>
 
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>2</p>
-                        </li>
-                    </ul>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>2</p>
+              </li>
+            </ul>
 
+            <a class="boton boton-amarillo d-block" id="myBtn" >Reservación</a>
 
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>
             </div>
 
-            <div class="anuncio">
-                <img src="./assets/img/anuncio2.jpg" alt="Anuncio casa de lujo">
-                <div class="contenido-anuncio">
-                    <h3>Casa terminados de lujo</h3>
-                    <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$2500</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-            </div>
-
-            <div class="anuncio">
-                <img src="./assets/img/anuncio3.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa con piscina</h3>
-                    <p>Casa con piscina, acabados de lujo en cumbaya y amueblada</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$2000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>4</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            <!--anuncio-->
-
-            <div class="anuncio">
-                <img src="./assets/img/anuncio4.jpg" alt="Anuncio casa de lujo">
-                <div class="contenido-anuncio">
-                    <h3>Casa Valle de los Chillos</h3>
-                    <p>Casa con acabados de lujo fuera de la ciudad y amueblada</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$1000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>5</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            <!--anuncio-->
-
-            <div class="anuncio">
-                <img src="./assets/img/anuncio5.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa Cumbaya</h3>
-                    <p>Casa frente al bosque y amueblada</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$2000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>4</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            <!--anuncio-->
-
-            <div class="anuncio">
-                <img src="./assets/img/anuncio6.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa con Valle de los Chillos</h3>
-                    <p>Casa con alberca y acabados de lujo en la ciudad</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$1000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>5</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            <!--anuncio-->
-            
-            <div class="anuncio">
-                <img src="./assets/img/anuncio7.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
-                    <p>Casa con alberca y acabados de lujo en la ciudad</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$1500</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>3</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            
-            <div class="anuncio">
-                <img src="./assets/img/anuncio8.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa con Cumbaya</h3>
-                    <p>Casa en el bosque</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$1000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>5</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            
-            <div class="anuncio">
-                <img src="./assets/img/anuncio9.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa Manta</h3>
-                    <p>Casa con alberca al frente del mar y playa privada</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$4000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>5</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>7</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
-            
-            <div class="anuncio">
-                <img src="./assets/img/anuncio10.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Departamento Quito </h3>
-                    <p>Departamento por la gonzales suarez y acabados de lujo</p>
-                    <p> Servicios: wifi, tv cable, hidromasaje</p>
-                    <p class="precioAnuncios">$800</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img src="./assets/img/icono_wc.svg" alt="icono wc">
-                            <p>2</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_estacionamiento.svg" alt="icono autos">
-                            <p>1</p>
-                        </li>
-                        <li>
-                            <img src="./assets/img/icono_dormitorio.svg" alt="icono habitaciones">
-                            <p>2</p>
-                        </li>
-                    </ul>
-
-                    <a  class="boton boton-amarillo d-block">Reservación</a>
-                </div>
-                <!--contenido anuncio-->
-            </div>
+          </div>
         </div>
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio2.jpg" alt="Anuncio casa de lujo" />
+          <div class="contenido-anuncio">
+            <h3>Casa terminados de lujo</h3>
+            <p>
+              Casa con diseño moderno, así como tecnología inteligente y
+              amueblada
+            </p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$2500</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+        </div>
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio3.jpg" alt="Anuncio casa con alberca" />
+          <div class="contenido-anuncio">
+            <h3>Casa con piscina</h3>
+            <p>Casa con piscina, acabados de lujo en cumbaya y amueblada</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$2000</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>4</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio4.jpg" alt="Anuncio casa de lujo" />
+          <div class="contenido-anuncio">
+            <h3>Casa Valle de los Chillos</h3>
+            <p>Casa con acabados de lujo fuera de la ciudad y amueblada</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$1000</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>5</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio5.jpg" alt="Anuncio casa con alberca" />
+          <div class="contenido-anuncio">
+            <h3>Casa Cumbaya</h3>
+            <p>Casa frente al bosque y amueblada</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$2000</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio6.jpg" alt="Anuncio casa con alberca" />
+          <div class="contenido-anuncio">
+            <h3>Casa con Valle de los Chillos</h3>
+            <p>Casa con alberca y acabados de lujo en la ciudad</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$1000</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>5</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio7.jpg" alt="Anuncio casa con alberca" />
+          <div class="contenido-anuncio">
+            <h3>Casa con alberca</h3>
+            <p>Casa con alberca y acabados de lujo en la ciudad</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$1500</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>3</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio8.jpg" alt="Anuncio casa con alberca" />
+          <div class="contenido-anuncio">
+            <h3>Casa con Cumbaya</h3>
+            <p>Casa en el bosque</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$1000</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>5</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+
+        <div class="anuncio">
+          <img src="./assets/img/anuncio9.jpg" alt="Anuncio casa con alberca" />
+          <div class="contenido-anuncio">
+            <h3>Casa Manta</h3>
+            <p>Casa con alberca al frente del mar y playa privada</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$4000</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>5</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>7</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+
+        <div class="anuncio">
+          <img
+            src="./assets/img/anuncio10.jpg"
+            alt="Anuncio casa con alberca"
+          />
+          <div class="contenido-anuncio">
+            <h3>Departamento Quito</h3>
+            <p>Departamento por la gonzales suarez y acabados de lujo</p>
+            <p>Servicios: wifi, tv cable, hidromasaje</p>
+            <p class="precioAnuncios">$800</p>
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img src="./assets/img/icono_wc.svg" alt="icono wc" />
+                <p>2</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_estacionamiento.svg"
+                  alt="icono autos"
+                />
+                <p>1</p>
+              </li>
+              <li>
+                <img
+                  src="./assets/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>2</p>
+              </li>
+            </ul>
+
+            <a class="boton boton-amarillo d-block">Reservación</a>
+          </div>
+          <!--contenido anuncio-->
+        </div>
+      </div>
     </main>
 
- 
     <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="somos.html">Quienes Somos</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacta.html">Contactanos</a>
-            </nav>
-            <p class="copyright"> Adriano Aulestia Barrionuevo Morales Tarco Todos los Derechos Reservados 2019 &copy; </p>
-        </div>
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="somos.html">Quienes Somos</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacta.html">Contactanos</a>
+        </nav>
+        <p class="copyright">
+          Adriano Aulestia Barrionuevo Morales Tarco Todos los Derechos
+          Reservados 2019 &copy;
+        </p>
+      </div>
     </footer>
-</body>
-
+    <script src="./src/js/app.js"></script>
+  </body>
 </html>
