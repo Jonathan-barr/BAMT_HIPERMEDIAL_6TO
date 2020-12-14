@@ -1,9 +1,4 @@
-body{
-    
-    margin: 0;
-    font-family: monospace;
 
-}
 h1,h2,h3{
     color: seagreen;
     text-align: center;
@@ -89,14 +84,12 @@ p{
 
 .cerrar{
     display: block;
-    background: #fff;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     margin: 15px auto;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    color: #000;
     padding: 5px;
     border-radius: 50%;
     line-height: 25px ;
